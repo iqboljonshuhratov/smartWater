@@ -22,7 +22,7 @@ function App() {
       title: "Smart Water",
       text: "Smart Water SW20 ochiq kanallar va daryolarda suv sathini o'lchash va sekundiga suv hajmini hisoblash imkoniyatiga ega. Ma'lumotni serverga onlayn o'tkazish uchun GSM moduli o'rnatilgan. Smart Water SW20 har qanday quvvat manbaidan mutlaqo mustaqil ishlaydi, chunki u quyosh batareyasi va qayta zaryadlanuvchi batareyaga ega. Smart Water SW20 to'g'ri ishlashi uchun uni to'g'ri o'rnatish va 2G ulanishi bilan ishlaydigan SIM kartani qo'yish kerak. ",
       idName: "SmartNazorat",
-      stil: "bgStil",
+      // stil: "bgStil",
     },
     {
       id: 3,
