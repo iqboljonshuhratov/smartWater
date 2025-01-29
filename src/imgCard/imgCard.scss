@@ -1,0 +1,156 @@
+@media (min-width: 0px) {
+  .imgCard-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  .imgCard-box-text-box {
+    display: flex;
+    flex-direction: column;
+  }
+  //   <div className="text-box">
+  .text-box {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 10px;
+      color: rgb(47, 112, 148);
+    }
+  }
+
+  .text-box-button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    a {
+      text-decoration: none;
+
+      .google-play-button,
+      .app-store-button {
+        width: 140px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        background-color: white;
+        :active {
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.279);
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .imgCard-box-card {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  //   {imgCards.map((img, index) => {
+  //     return (
+  //       <div className="imgCard-box-card-img-box" key={index}>
+  .imgCard-box-card-img-box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    img {
+      height: 400px;
+      border-radius: 20px;
+    }
+  }
+
+  //         <img src={img} alt="img" />
+  //       </div>
+  //     );
+  //   })}
+  // </div>
+}
+
+@media (min-width: 700px) {
+  .imgCard-box {
+    padding: 40px 170px;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  .imgCard-box-text-box {
+    display: flex;
+  }
+  .text-box {
+    text-align: start;
+  }
+
+  .text-box-button-box {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  // <div className="imgCard-box-card">
+  .imgCard-box-card {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+  //   {imgCards.map((img, index) => {
+  //     return (
+  //       <div className="imgCard-box-card-img-box" key={index}>
+  .imgCard-box-card-img-box {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    img {
+      height: 300px;
+      border-radius: 20px;
+    }
+  }
+
+  //         <img src={img} alt="img" />
+  //       </div>
+  //     );
+  //   })}
+  // </div>
+}
+
+.saveLink {
+  text-decoration: none;
+  cursor: pointer;
+  .save-button {
+    border: 1px solid rgb(47, 112, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(255, 254, 254);
+    border-radius: 5px;
+    color: rgb(47, 112, 148);
+    gap: 10px;
+    :active {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.279);
+    }
+  }
+}

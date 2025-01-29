@@ -1,0 +1,129 @@
+// <header className="header-box">
+
+@media (min-width: 0px) {
+  .header-box {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+    z-index: 100;
+
+    .logo-box {
+      width: auto;
+    }
+
+    .header-box-ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      text-align: center;
+      .header-box-ul-a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .header-box-button-box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      .header-box-ul-a {
+        text-decoration: none;
+      }
+      .button-box-button1 {
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        border: 1px solid rgb(47, 112, 148);
+        gap: 5px;
+        align-items: center;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(47, 112, 148);
+        img {
+          width: 20px;
+        }
+      }
+      .button-box-button {
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        border: 1px solid rgb(47, 112, 148);
+        gap: 5px;
+        align-items: center;
+        font-weight: 700;
+        text-decoration: none;
+        color: rgb(47, 112, 148);
+        background-color: white;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .header-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+
+    .logo-box {
+      width: auto;
+    }
+
+    .header-box-ul {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .header-box {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%; /* Har qanday ekranda kenglik */
+    max-width: 1900px; /* Maksimal kenglikni cheklaydi */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px 30px;
+    .logo-box {
+      width: auto;
+    }
+    .header-box-button-box {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .header-box {
+    .header-box-ul {
+      gap: 30px;
+      text-align: start;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-box {
+    padding: 30px 100px;
+    .header-box-ul {
+      gap: 50px;
+    }
+  }
+}

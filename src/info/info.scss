@@ -1,0 +1,104 @@
+// <div className="info-box">
+@media (min-width: 0) {
+  .info-box {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  //       <div className="info-box-card">
+  .info-box-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  //         <div className="info-box-card-text-box">
+  .info-box-card-text-box {
+    text-align: center;
+  }
+  //           <h1>
+  //             Smart Water qurilmasi yordamida suv resurslaringizni samarali
+  //             boshqaring
+  //           </h1>
+
+  .info-box-card-text-box h1 {
+    color: rgb(47, 112, 148);
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  //           <p>
+  //             Smart Water SW20 bilan suv resurslaringizni kuzatib, samarali
+  //             boshqaring! Suv sathi va hajmini aniq o‘lchash, ma'lumotlarni onlayn
+  //             uzatish imkoniyati. Quyosh va qayta zaryadlanuvchi batareya
+  //             yordamida energiya tejash imkoniyati!
+  //           </p>
+  .info-box-card-text-box p {
+    font-family: "Roboto", sans-serif;
+  }
+  //         </div>
+  //         <div className="info-box-card-img-box">
+  //           <iframe
+  .info-box-card-img-box {
+    // iframe {
+    //   width: 100%;
+    //   height: auto;
+    // }
+  }
+  //             width="100%"
+  //             height="auto"
+  //             src="https://www.youtube.com/embed/Uc5T4tOPCGg"
+  //             title="Smart Water dasturdan foydalanish"
+  //             frameborder="0"
+  //             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  //             referrerpolicy="strict-origin-when-cross-origin"
+  //             allowfullscreen
+  //           ></iframe>
+}
+
+@media (min-width: 700px) {
+  .info-box-card {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .info-box-card-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    text-align: start;
+  }
+
+  .info-box-card-text-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .info-box-card-text-box p {
+    font-size: 1.3rem;
+  }
+
+  .info-box-card-img-box {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .info-box-card {
+    padding: 40px 150px;
+  }
+  .info-box-card-img-box {
+    width: 50%;
+    // ifrome {
+    //   width: 100%;
+    // }
+  }
+  .info-box-card-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    text-align: start;
+  }
+}

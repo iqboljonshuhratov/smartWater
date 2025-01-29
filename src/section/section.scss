@@ -1,0 +1,84 @@
+// .section-box {
+//   position: relative;
+//   width: 100%; // Kenglikni to‘liq qamrab oladi
+//   overflow: hidden; // Keraksiz scrollni yo‘q qiladi
+
+//   // Video uchun stil
+//   .section-box-video {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 50%; // Videoni kenglik bo‘ylab to‘liq qamrab oladi
+//     height: 100%; // Videoning balandligi section balandligiga moslashadi
+//     object-fit: cover; // Proportsiyani saqlab ekranni qoplaydi
+//     z-index: -1; // Videoni matndan orqaga joylash
+//   }
+
+//   // Matn uchun stil
+//   .section-box-h1 {
+//     position: relative; // Matn videodan mustaqil joylashadi
+//     font-size: 1.5rem; // Mobil uchun standart font hajmi
+//     color: white;
+//     text-align: center;
+//     padding: 2rem 1rem; // Ichki joy qoldirish
+
+//     // Responsivlik uchun o‘lchamlar
+//     @media (min-width: 768px) {
+//       // Tablet
+//       font-size: 2rem;
+//     }
+
+//     @media (min-width: 1024px) {
+//       // Desktop
+//       font-size: 3rem;
+//     }
+//   }
+// }
+
+@media (max-width: 500px) {
+  .section-box {
+    display: none;
+    .section-box-video {
+      display: none;
+    }
+    .section-box-h1 {
+      display: none;
+    }
+  }
+}
+
+.section-box {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make the section height full viewport */
+  //   overflow: hidden;
+
+  .section-box-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire area */
+    z-index: -1; /* Video stays behind the content */
+  }
+}
+.section-box-h1 {
+  position: absolute; /* This makes the text overlay on top of the video */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  font-size: 2rem; /* Initial font size for mobile */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+  /* Responsive adjustments */
+  //   @media (min-width: 768px) {
+  //     font-size: 3rem;
+  //   }
+
+  //   @media (min-width: 1024px) {
+  //     font-size: 4rem;
+  //   }
+}
